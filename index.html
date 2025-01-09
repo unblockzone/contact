@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- Favicon link -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/61/61457.png" type="image/x-icon">
+
+    <style>
+        /* Prevent horizontal and vertical scrolling */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: black;
+            font-family: 'Bowlby One', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 0;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .white {
+            color: white;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-button {
+            background-color: black;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px 4px #008CFF;
+            color: #008CFF;
+        }
+
+        .logo-container {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/61/61457.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container:hover {
+            transform: scale(1.2);
+        }
+
+        /* AI Websites Container */
+        .ai-websites {
+            margin: 30px;
+            background-color: #222;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 3px #444;
+            max-width: 600px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .ai-websites:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 0px 20px 5px #008CFF;
+        }
+
+        .ai-websites h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #00AFFF;
+        }
+
+        .website-button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #000;
+            color: white;
+            border: 2px solid #008CFF;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .website-button:hover {
+            transform: scale(1.1);
+            background-color: #008CFF;
+            box-shadow: 0px 0px 15px 5px #00AFFF;
+            color: white;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><a href="https://unblockzone.github.io/"><span class="white">UNBLOCK</span><span class="blue">ZONE</span></a></h1>
+        <div class="nav-buttons">
+            <a href="https://unblockzone.github.io/apps/" class="nav-button">APPS</a>
+            <a href="https://unblockzone.github.io/games/" class="nav-button">GAMES</a>
+            <a href="https://unblockzone.github.io/proxies/" class="nav-button">PROXIES</a>
+            <a href="https://unblockzone.github.io/exploits/" class="nav-button">EXPLOITS</a>
+            <a href="https://unblockzone.github.io/settings/" class="nav-button">SETTINGS</a>
+        </div>
+        <div class="logo-container"></div>
+    </header>
+
+    <!-- AI Websites Box -->
+    <div class="ai-websites">
+        <h2>AI Websites</h2>
+        <a href="https://chat.openai.com" class="website-button" target="_blank">Contact Me</a>
+        <a href="https://bard.google.com" class="website-button" target="_blank">Request a Game</a>
+        <a href="https://perplexity.ai" class="website-button" target="_blank">Request a Proxy</a>
+        <a href="https://www.notion.so/ai" class="website-button" target="_blank">Request a App</a>
+    </div>
+
+    <script>
+        // Snow effect generator removed
+    </script>
+</body>
+</html>
