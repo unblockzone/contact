@@ -25,6 +25,9 @@
             flex-direction: column;
             text-align: center;
             position: relative;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Center the content vertically */
         }
 
         header {
@@ -90,6 +93,52 @@
             box-shadow: 0px 0px 15px 4px #008CFF;
             color: #008CFF;
         }
+
+        /* Contact Us Box */
+        .contact-us-box {
+            background-color: #333;
+            border-radius: 15px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            margin-top: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-us-box:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+            box-shadow: 0px 0px 20px 4px #008CFF; /* Blue glow effect */
+        }
+
+        .contact-us-box h2 {
+            color: blue;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons inside the contact box */
+        .contact-button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-size: 16px;
+            text-decoration: none;
+            display: block;
+            margin: 10px auto;
+            width: 80%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px 4px #008CFF;
+            color: #008CFF;
+        }
+
+        .contact-button .blue {
+            color: blue;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -108,5 +157,14 @@
             <a href="https://unblockzone.github.io/contact/" class="nav-button">CONTACT</a>
         </div>
     </header>
+
+    <!-- Contact Us Box -->
+    <div class="contact-us-box">
+        <h2>CONTACT US</h2>
+        <a href="https://your-custom-url1.com" class="contact-button">Contact Support</a>
+        <a href="https://your-custom-url2.com" class="contact-button">Report an Issue</a>
+        <a href="https://your-custom-url3.com" class="contact-button">General Inquiries</a>
+        <a href="https://your-custom-url4.com" class="contact-button">Feedback</a>
+    </div>
 </body>
 </html>
