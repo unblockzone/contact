@@ -18,9 +18,9 @@
         }
 
         body {
-            background-color: white; /* Changed from black to white */
+            background-color: black; /* Reverted back to black background */
             font-family: 'Bowlby One', sans-serif;
-            color: black; /* Text color adjusted for readability */
+            color: white; /* Text color adjusted for contrast on black background */
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -36,8 +36,10 @@
             align-items: center;
             justify-content: flex-start; /* Align items to the left */
             padding: 10px 20px;
-            position: sticky;
+            position: fixed; /* Changed to fixed position to keep the header at the top */
             top: 0;
+            left: 0;
+            width: 100%;
             z-index: 10;
         }
 
