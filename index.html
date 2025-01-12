@@ -18,7 +18,9 @@
         }
 
         body {
-            background-color: black; /* Reverted back to black background */
+            background: linear-gradient(-45deg, black, #000011, #001122, black);
+            background-size: 300% 300%;
+            animation: gradientAnimation 15s ease infinite;
             font-family: 'Bowlby One', sans-serif;
             color: white; /* Text color adjusted for contrast on black background */
             display: flex;
@@ -28,6 +30,18 @@
             align-items: center;
             justify-content: center;
             height: 100vh; /* Center the content vertically */
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         header {
