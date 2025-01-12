@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +19,9 @@
         }
 
         body {
-            background: linear-gradient(135deg, #0000FF, #000000); /* Dark Blue to Black Gradient */
+            background: linear-gradient(-45deg, black, #000011, #001122, black);
+            background-size: 300% 300%;
+            animation: gradientAnimation 15s ease infinite;
             font-family: 'Bowlby One', sans-serif;
             color: white; /* Text color adjusted for contrast on black background */
             display: flex;
@@ -28,99 +31,17 @@
             align-items: center;
             justify-content: center;
             height: 100vh; /* Center the content vertically */
-            overflow: hidden; /* Prevent scrolling */
         }
 
-        /* Floating Blue Dots Animation */
-        .dot {
-            position: absolute;
-            border-radius: 50%;
-            background-color: rgba(0, 140, 255, 0.8); /* Blue Glow */
-            animation: floatUp 6s ease-in-out infinite, glow 1.5s alternate infinite;
-        }
-
-        /* Different Sizes and Animations for Dots */
-        .dot:nth-child(1) {
-            width: 25px;
-            height: 25px;
-            animation-delay: 0s;
-            top: 10%;
-            left: 10%;
-        }
-
-        .dot:nth-child(2) {
-            width: 30px;
-            height: 30px;
-            animation-delay: 1s;
-            top: 25%;
-            left: 50%;
-        }
-
-        .dot:nth-child(3) {
-            width: 20px;
-            height: 20px;
-            animation-delay: 2s;
-            top: 40%;
-            left: 20%;
-        }
-
-        .dot:nth-child(4) {
-            width: 15px;
-            height: 15px;
-            animation-delay: 3s;
-            top: 60%;
-            left: 70%;
-        }
-
-        .dot:nth-child(5) {
-            width: 40px;
-            height: 40px;
-            animation-delay: 4s;
-            top: 80%;
-            left: 30%;
-        }
-
-        .dot:nth-child(6) {
-            width: 18px;
-            height: 18px;
-            animation-delay: 5s;
-            top: 15%;
-            left: 80%;
-        }
-
-        .dot:nth-child(7) {
-            width: 25px;
-            height: 25px;
-            animation-delay: 2s;
-            top: 50%;
-            left: 90%;
-        }
-
-        .dot:nth-child(8) {
-            width: 22px;
-            height: 22px;
-            animation-delay: 3s;
-            top: 30%;
-            left: 40%;
-        }
-
-        /* Keyframes for dot floating upwards */
-        @keyframes floatUp {
+        @keyframes gradientAnimation {
             0% {
-                transform: translateY(0);
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
             }
             100% {
-                transform: translateY(-100vh); /* Moves the dot upwards */
-            }
-        }
-
-        /* Keyframes for glowing effect */
-        @keyframes glow {
-            0% {
-                box-shadow: 0 0 5px rgba(0, 140, 255, 0.8), 0 0 10px rgba(0, 140, 255, 0.6);
-            }
-            100% {
-                box-shadow: 0 0 15px rgba(0, 140, 255, 1), 0 0 30px rgba(0, 140, 255, 0.8);
+                background-position: 0% 50%;
             }
         }
 
@@ -239,16 +160,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Floating Blue Dots -->
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-
     <header>
         <h1 onclick="window.location.href='https://unblockzone.github.io/'">
             <span class="white">UNBLOCK</span><span class="blue">ZONE</span>
