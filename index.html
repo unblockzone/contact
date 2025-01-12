@@ -18,7 +18,7 @@
         }
 
         body {
-            background: linear-gradient(135deg, #000, #003366); /* Blue and black gradient */
+            background: linear-gradient(135deg, #000000, #0000FF); /* Blue and Black Gradient */
             font-family: 'Bowlby One', sans-serif;
             color: white; /* Text color adjusted for contrast on black background */
             display: flex;
@@ -28,51 +28,72 @@
             align-items: center;
             justify-content: center;
             height: 100vh; /* Center the content vertically */
-            overflow: hidden;
+            overflow: hidden; /* Prevent scrolling */
         }
 
-        /* Floating Blue Dots */
+        /* Floating Blue Dots Animation */
         .dot {
             position: absolute;
             border-radius: 50%;
-            background-color: blue;
-            opacity: 0.7;
-            animation: floatDot 10s infinite ease-in-out;
+            background-color: rgba(0, 140, 255, 0.8);
+            animation: float 5s ease-in-out infinite;
         }
 
-        /* Dot animation */
-        @keyframes floatDot {
+        .dot:nth-child(1) {
+            width: 20px;
+            height: 20px;
+            animation-duration: 6s;
+            animation-delay: 0s;
+            top: 10%;
+            left: 15%;
+        }
+
+        .dot:nth-child(2) {
+            width: 30px;
+            height: 30px;
+            animation-duration: 7s;
+            animation-delay: 1s;
+            top: 25%;
+            left: 35%;
+        }
+
+        .dot:nth-child(3) {
+            width: 25px;
+            height: 25px;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            top: 50%;
+            left: 60%;
+        }
+
+        .dot:nth-child(4) {
+            width: 15px;
+            height: 15px;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            top: 80%;
+            left: 75%;
+        }
+
+        .dot:nth-child(5) {
+            width: 40px;
+            height: 40px;
+            animation-duration: 9s;
+            animation-delay: 4s;
+            top: 60%;
+            left: 20%;
+        }
+
+        @keyframes float {
             0% {
-                transform: translateY(0) translateX(0);
-                opacity: 0.7;
-            }
-            25% {
-                transform: translateY(-100px) translateX(50px);
-                opacity: 1;
+                transform: translateY(0) scale(1);
             }
             50% {
-                transform: translateY(0) translateX(100px);
-                opacity: 0.7;
-            }
-            75% {
-                transform: translateY(100px) translateX(50px);
-                opacity: 1;
+                transform: translateY(-50px) scale(1.5);
             }
             100% {
-                transform: translateY(0) translateX(0);
-                opacity: 0.7;
+                transform: translateY(0) scale(1);
             }
-        }
-
-        /* Background for floating dots */
-        .dot-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* Send the dots behind the content */
-            pointer-events: none; /* Prevent the dots from interacting with the user */
         }
 
         header {
@@ -190,6 +211,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Floating Blue Dots -->
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+
     <header>
         <h1 onclick="window.location.href='https://unblockzone.github.io/'">
             <span class="white">UNBLOCK</span><span class="blue">ZONE</span>
@@ -212,16 +240,6 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1W6Fms7VvnzcKsEpCo0gsG3uxkLXQtsGNLHWBdBJPCmFu5w/viewform" class="contact-button">Request a Game</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6vhdr9BtMTaHEEcfq_aIs4QsaKljjLbtRcqhu-WO5Jaobig/viewform" class="contact-button">Request an App</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzNQHr8zsVbvQeRHSjNDfriu-GbhaiP725vTHlGkFEvOsIVA/viewform" class="contact-button">Request a Proxy</a>
-    </div>
-
-    <!-- Floating Dots Container -->
-    <div class="dot-container">
-        <!-- Multiple floating dots -->
-        <div class="dot" style="width: 15px; height: 15px; top: 10%; left: 15%; animation-delay: 0s;"></div>
-        <div class="dot" style="width: 20px; height: 20px; top: 50%; left: 60%; animation-delay: 2s;"></div>
-        <div class="dot" style="width: 12px; height: 12px; top: 30%; left: 80%; animation-delay: 4s;"></div>
-        <div class="dot" style="width: 25px; height: 25px; top: 80%; left: 20%; animation-delay: 6s;"></div>
-        <div class="dot" style="width: 18px; height: 18px; top: 70%; left: 40%; animation-delay: 8s;"></div>
     </div>
 </body>
 </html>
