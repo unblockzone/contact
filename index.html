@@ -77,6 +77,17 @@
             }
         }
 
+        /* Background for floating dots */
+        .dot-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Send the dots behind the content */
+            pointer-events: none; /* Prevent the dots from interacting with the user */
+        }
+
         header {
             background-color: #333;
             display: flex;
@@ -216,11 +227,14 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzNQHr8zsVbvQeRHSjNDfriu-GbhaiP725vTHlGkFEvOsIVA/viewform" class="contact-button">Request a Proxy</a>
     </div>
 
-    <!-- Add Blue Floating Dots -->
-    <div class="dot" style="width: 15px; height: 15px; top: 10%; left: 15%; animation-delay: 0s;"></div>
-    <div class="dot" style="width: 20px; height: 20px; top: 50%; left: 60%; animation-delay: 2s;"></div>
-    <div class="dot" style="width: 12px; height: 12px; top: 30%; left: 80%; animation-delay: 4s;"></div>
-    <div class="dot" style="width: 25px; height: 25px; top: 80%; left: 20%; animation-delay: 6s;"></div>
-    <div class="dot" style="width: 18px; height: 18px; top: 70%; left: 40%; animation-delay: 8s;"></div>
+    <!-- Floating Dots Container -->
+    <div class="dot-container">
+        <!-- Multiple floating dots -->
+        <div class="dot" style="width: 15px; height: 15px; top: 10%; left: 15%; animation-delay: 0s;"></div>
+        <div class="dot" style="width: 20px; height: 20px; top: 50%; left: 60%; animation-delay: 2s;"></div>
+        <div class="dot" style="width: 12px; height: 12px; top: 30%; left: 80%; animation-delay: 4s;"></div>
+        <div class="dot" style="width: 25px; height: 25px; top: 80%; left: 20%; animation-delay: 6s;"></div>
+        <div class="dot" style="width: 18px; height: 18px; top: 70%; left: 40%; animation-delay: 8s;"></div>
+    </div>
 </body>
 </html>
