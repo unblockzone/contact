@@ -49,73 +49,32 @@
             position: absolute;
             border-radius: 50%;
             background-color: rgba(0, 140, 255, 0.8); /* Blue Glow */
-            animation: floatUp 6s ease-in-out infinite, glow 1.5s alternate infinite;
+            animation: floatUp 5s ease-in-out infinite, glow 1.5s alternate infinite;
+            z-index: -1; /* Ensures dots are behind the contact box */
         }
 
         /* Different Sizes and Animations for Dots */
-        .dot:nth-child(1) {
-            width: 25px;
-            height: 25px;
-            animation-delay: 0s;
-            top: 10%;
-            left: 10%;
-        }
-
-        .dot:nth-child(2) {
-            width: 30px;
-            height: 30px;
-            animation-delay: 1s;
-            top: 25%;
-            left: 50%;
-        }
-
-        .dot:nth-child(3) {
-            width: 20px;
-            height: 20px;
-            animation-delay: 2s;
-            top: 40%;
-            left: 20%;
-        }
-
-        .dot:nth-child(4) {
-            width: 15px;
-            height: 15px;
-            animation-delay: 3s;
-            top: 60%;
-            left: 70%;
-        }
-
-        .dot:nth-child(5) {
-            width: 40px;
-            height: 40px;
-            animation-delay: 4s;
-            top: 80%;
-            left: 30%;
-        }
-
-        .dot:nth-child(6) {
-            width: 18px;
-            height: 18px;
-            animation-delay: 5s;
-            top: 15%;
-            left: 80%;
-        }
-
-        .dot:nth-child(7) {
-            width: 25px;
-            height: 25px;
-            animation-delay: 2s;
-            top: 50%;
-            left: 90%;
-        }
-
-        .dot:nth-child(8) {
-            width: 22px;
-            height: 22px;
-            animation-delay: 3s;
-            top: 30%;
-            left: 40%;
-        }
+        .dot:nth-child(1) { width: 10px; height: 10px; animation-delay: 0s; top: 10%; left: 10%; }
+        .dot:nth-child(2) { width: 12px; height: 12px; animation-delay: 0.5s; top: 25%; left: 50%; }
+        .dot:nth-child(3) { width: 15px; height: 15px; animation-delay: 1s; top: 40%; left: 20%; }
+        .dot:nth-child(4) { width: 20px; height: 20px; animation-delay: 1.5s; top: 60%; left: 70%; }
+        .dot:nth-child(5) { width: 25px; height: 25px; animation-delay: 2s; top: 80%; left: 30%; }
+        .dot:nth-child(6) { width: 10px; height: 10px; animation-delay: 2.5s; top: 10%; left: 80%; }
+        .dot:nth-child(7) { width: 12px; height: 12px; animation-delay: 3s; top: 15%; left: 90%; }
+        .dot:nth-child(8) { width: 18px; height: 18px; animation-delay: 3.5s; top: 25%; left: 40%; }
+        .dot:nth-child(9) { width: 20px; height: 20px; animation-delay: 4s; top: 30%; left: 10%; }
+        .dot:nth-child(10) { width: 28px; height: 28px; animation-delay: 4.5s; top: 45%; left: 60%; }
+        .dot:nth-child(11) { width: 14px; height: 14px; animation-delay: 5s; top: 50%; left: 20%; }
+        .dot:nth-child(12) { width: 22px; height: 22px; animation-delay: 5.5s; top: 60%; left: 80%; }
+        .dot:nth-child(13) { width: 17px; height: 17px; animation-delay: 6s; top: 70%; left: 50%; }
+        .dot:nth-child(14) { width: 19px; height: 19px; animation-delay: 6.5s; top: 80%; left: 10%; }
+        .dot:nth-child(15) { width: 30px; height: 30px; animation-delay: 7s; top: 20%; left: 70%; }
+        .dot:nth-child(16) { width: 12px; height: 12px; animation-delay: 7.5s; top: 45%; left: 90%; }
+        .dot:nth-child(17) { width: 35px; height: 35px; animation-delay: 8s; top: 50%; left: 40%; }
+        .dot:nth-child(18) { width: 40px; height: 40px; animation-delay: 8.5s; top: 60%; left: 20%; }
+        .dot:nth-child(19) { width: 50px; height: 50px; animation-delay: 9s; top: 20%; left: 50%; }
+        .dot:nth-child(20) { width: 25px; height: 25px; animation-delay: 9.5s; top: 75%; left: 30%; }
+        .dot:nth-child(21) { width: 22px; height: 22px; animation-delay: 10s; top: 55%; left: 80%; }
 
         /* Keyframes for dot floating upwards */
         @keyframes floatUp {
@@ -212,6 +171,7 @@
             text-align: center;
             margin-top: 50px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 5; /* Make sure it is above the floating dots */
         }
 
         .contact-us-box:hover {
@@ -261,6 +221,18 @@
     <div class="dot"></div>
     <div class="dot"></div>
     <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
 
     <header>
         <h1 onclick="window.location.href='https://unblockzone.github.io/'">
@@ -283,7 +255,6 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmnPG4vUFz0h6wFKU8E7mGVIG94Vc9ZGB_tb_tehWZjb1j2g/viewform" class="contact-button">Contact Support</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1W6Fms7VvnzcKsEpCo0gsG3uxkLXQtsGNLHWBdBJPCmFu5w/viewform" class="contact-button">Request a Game</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6vhdr9BtMTaHEEcfq_aIs4QsaKljjLbtRcqhu-WO5Jaobig/viewform" class="contact-button">Request an App</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzNQHr8zsVbvQeRHSjNDfriu-GbhaiP725vTHlGkFEvOsIVA/viewform" class="contact-button">Request a Proxy</a>
     </div>
 </body>
 </html>
