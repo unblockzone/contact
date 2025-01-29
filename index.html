@@ -18,7 +18,7 @@
         }
 
         body {
-            background: linear-gradient(-45deg, black, darkred, #1a1a1a, black); /* Dark red and black gradient */
+            background: linear-gradient(-45deg, black, lightblue, #1a1a1a, black); /* Light blue and black gradient */
             background-size: 300% 300%;
             animation: gradientAnimation 15s ease infinite;
             font-family: 'Bowlby One', sans-serif;
@@ -48,7 +48,7 @@
         .dot {
             position: absolute;
             border-radius: 50%;
-            background-color: rgba(255, 0, 0, 0.8); /* Red Glow */
+            background-color: rgba(0, 191, 255, 0.8); /* Light blue Glow */
             animation: floatUp 5s ease-in-out infinite, glow 1.5s alternate infinite, fadeIn 1s forwards;
             z-index: -1; /* Ensures dots are behind the contact box */
         }
@@ -88,10 +88,10 @@
         /* Keyframes for glowing effect */
         @keyframes glow {
             0% {
-                box-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 0 0 10px rgba(255, 0, 0, 0.6);
+                box-shadow: 0 0 5px rgba(0, 191, 255, 0.8), 0 0 10px rgba(0, 191, 255, 0.6);
             }
             100% {
-                box-shadow: 0 0 15px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 0, 0, 0.8);
+                box-shadow: 0 0 15px rgba(0, 191, 255, 1), 0 0 30px rgba(0, 191, 255, 0.8);
             }
         }
 
@@ -130,7 +130,11 @@
         }
 
         .red {
-            color: red; /* Changed the color of "ZONE" to red */
+            color: red; /* "ZONE" is no longer red */
+        }
+
+        .blue {
+            color: lightblue; /* Changed to light blue */
         }
 
         .white {
@@ -167,8 +171,8 @@
 
         .nav-button:hover {
             transform: scale(1.1);
-            box-shadow: 0px 0px 15px 4px #FF0000; /* Red glow effect */
-            color: #FF0000; /* Red color on hover */
+            box-shadow: 0px 0px 15px 4px #00BFFF; /* Light blue glow effect */
+            color: #00BFFF; /* Light blue color on hover */
         }
 
         /* Contact Us Box */
@@ -185,7 +189,7 @@
 
         .contact-us-box:hover {
             transform: scale(1.05); /* Zoom effect on hover */
-            box-shadow: 0px 0px 20px 4px #FF0000; /* Red glow effect */
+            box-shadow: 0px 0px 20px 4px #00BFFF; /* Light blue glow effect */
         }
 
         .contact-us-box h2 {
@@ -210,12 +214,12 @@
 
         .contact-button:hover {
             transform: scale(1.1);
-            box-shadow: 0px 0px 15px 4px #FF0000; /* Red glow effect */
-            color: #FF0000; /* Red color on hover */
+            box-shadow: 0px 0px 15px 4px #00BFFF; /* Light blue glow effect */
+            color: #00BFFF; /* Light blue color on hover */
         }
 
-        .contact-button .red {
-            color: red;
+        .contact-button .blue {
+            color: lightblue;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Roboto:wght@700&display=swap" rel="stylesheet">
@@ -243,7 +247,7 @@
 
     <header>
         <h1 onclick="window.location.href='https://unblockzone.github.io/'">
-            <span class="white">UNBLOCK</span><span class="red">ZONE</span> <!-- Changed "ZONE" to red -->
+            <span class="white">UNBLOCK</span><span class="blue">ZONE</span> <!-- "ZONE" is light blue now -->
         </h1>
         <div class="nav-buttons">
             <a href="https://unblockzone.github.io/apps/" class="nav-button">APPS</a>
